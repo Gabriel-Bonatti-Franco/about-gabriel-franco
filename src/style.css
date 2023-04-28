@@ -36,6 +36,7 @@ aside{
     width: var(--largura-aside);
     background: var(--cor-blocos);
     padding: 10px;
+    border-radius: 15px;
 
     display: flex;
     flex-direction: column;
@@ -48,6 +49,7 @@ aside .card{
     height: 100%;
 
     text-align: center;
+    border-radius: 10px;
 }
 
 aside .card.sobre{
@@ -74,6 +76,8 @@ main{
     gap: 10px;
     justify-content: space-between;
 
+    border-radius: 15px;
+
     height: var(--altura-pagina);
     width: var(--largura-main);
     padding: 10px;
@@ -84,16 +88,19 @@ header{
     padding: 10px;
     
     height: calc(0.2 * var(--altura-conteudo-main));
+    border-radius: 15px;
 }
 section{
     background: var(--cor-destaque);
     padding: 10px;
     
     height: calc(0.7 * var(--altura-conteudo-main));
+    border-radius: 15px;
 }
 footer{
     background: var(--cor-destaque);
     padding: 10px;
     
     height: calc(0.1 * var(--altura-conteudo-main));
+    border-radius: 15px;
 }
