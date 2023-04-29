@@ -9,14 +9,14 @@
     --fonte-destaque: 'Arial', 'Helvetica', sans-serif;;
     
 
-    --cor-fundo-claro: #a6cbe9;
-    --cor-blocos-claro: #748ea3;
-    --cor-destaque-claro: #ffffff;
+    --cor-fundo-claro: #bfdef8;
+    --cor-blocos-claro: #638aaa;
+    --cor-destaque-claro: #e5f3fd;
     --cor-fonte-claro: #ffffff;
 
-    --cor-fundo-escuro: #233442;
+    --cor-fundo-escuro: #1e3344;
     --cor-blocos-escuro: #0e1922;
-    --cor-destaque-escuro: #192b3a;
+    --cor-destaque-escuro: #3a4f5f;
     --cor-fonte-escuro: #000000;
 
     --cor-fundo: var(--cor-fundo-escuro);
