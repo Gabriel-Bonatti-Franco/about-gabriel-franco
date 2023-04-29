@@ -1,0 +1,29 @@
+@media (max-width: 1000px ){
+    .pagina{
+        flex-direction: column;
+    }
+
+    aside{
+        flex-direction: row;
+
+        width: 100%;
+        height: calc(0.4 * var(--altura-pagina));
+    }
+
+    aside .card{
+        height: auto;
+        width: calc(100% / 3);
+    }
+
+    aside .card.sobre{
+        height: auto;
+    }
+
+    aside .card.sobre .foto{
+        display: none;
+    }
+    
+    main{
+        width: 100%;
+    }
+}
