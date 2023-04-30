@@ -36,6 +36,8 @@
     gap: 10px;
     padding: 10px;
 
+    flex-wrap: nowrap;
+
     font-family: var(--fonte-principal);
     color: var(--cor-fonte);
     
@@ -53,7 +55,7 @@
     height: 25px;
     width: 25px;
 
-    position: fixed;
+    position: absolute;
     top: 35px;
     right: 30px;
 
@@ -69,16 +71,16 @@
     height: 25px;
     width: 25px;
 
-    position: fixed;
-    top: 35px;
-    right: 22px;
+    position: absolute;
+    top: 0px;
+    right: -8px;
 
     border-radius: 50%;
     background-color: var(--cor-destaque);
     border: none;
 }
 .lampada.dia{
-    position: fixed;
+    position: absolute;
     top: 35px;
     right: 32px;
 
