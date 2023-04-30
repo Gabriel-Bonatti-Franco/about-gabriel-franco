@@ -4,20 +4,20 @@
 
     --altura-pagina: calc(100vh - 20px);
     --altura-conteudo-main: calc(100vh - 20px);
-
-    --fonte-principal: 'Arial', 'Helvetica', sans-serif;
-    --fonte-destaque: 'Arial', 'Helvetica', sans-serif;;
     
+    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-destaque-cond: 'Roboto Condensed', sans-serif;
+    --fonte-destaque-mono: 'Roboto Mono', monospace;
 
-    --cor-fundo-claro: #bfdef8;
-    --cor-blocos-claro: #638aaa;
+    --cor-fundo-claro: #cce5fc;
+    --cor-blocos-claro: #2c3e4d;
     --cor-destaque-claro: #e5f3fd;
     --cor-fonte-claro: #ffffff;
 
     --cor-fundo-escuro: #1e3344;
     --cor-blocos-escuro: #0e1922;
     --cor-destaque-escuro: #3a4f5f;
-    --cor-fonte-escuro: #000000;
+    --cor-fonte-escuro: var(--cor-blocos-claro);
 
     --cor-fundo: var(--cor-fundo-escuro);
     --cor-blocos: var(--cor-blocos-escuro);
@@ -42,6 +42,7 @@
     color: var(--cor-fonte);
     
     background-color: var(--cor-fundo);
+
 }
 
 .pagina.clara{
@@ -64,7 +65,7 @@
     border: none;
 }
 .lampada.noite{
-    background-color: black;
+    background-color: var(--cor-blocos-claro);
 }
 .lampada.noite::after{
     content: "";
@@ -92,6 +93,7 @@
 aside{
     height: var(--altura-pagina);
     width: var(--largura-aside);
+
     background: var(--cor-blocos);
     padding: 10px;
     border-radius: 15px;
@@ -110,8 +112,36 @@ aside .card{
     border-radius: 10px;
 }
 
+aside .card h2{
+    margin: 10px;
+}
+
+aside .card ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+aside a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+
+    transition: 0.3s;
+}
+
+aside a:hover{
+    text-shadow: 1px 1px 2px var(--cor-blocos);
+    transform: scale(1.2);
+    transition: 0.3s;
+
+    text-decoration: underline;
+}
+
 aside .card.sobre{
     height: calc(1.5 * var(--altura-conteudo-main));
+    line-height: 2em;
 }
 
 aside .card.sobre .foto{
@@ -120,11 +150,29 @@ aside .card.sobre .foto{
     width: 170px;
     height: 170px;
 
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 20px;
 
     text-align: center;
 
     background-color: var(--cor-blocos);
+}
+
+aside .card.sobre .social{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+aside .card.sobre .social li{
+    padding: 0 10px;
+    display: flex;
+    gap: 5px;
+
+    transition: 0.3s;
 }
 
 main{
