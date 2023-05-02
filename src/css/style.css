@@ -1,9 +1,12 @@
 :root{
     --largura-aside: 300px;
-    --largura-main: calc(100% - 310px);
+    --largura-main: calc(100%);
 
     --altura-pagina: calc(100vh - 20px);
-    --altura-conteudo-main: calc(100vh - 20px);
+    --altura-cabecalho: 250px;
+    --altura-artigo: calc(100vh - var(--altura-cabecalho) - 50px);
+    --altura-conteudo-main: calc(100% - 20px);
+    
     
     --fonte-principal: 'Roboto', sans-serif;
     --fonte-destaque-cond: 'Roboto Condensed', sans-serif;
@@ -44,6 +47,7 @@
     
     background-color: var(--cor-fundo);
 
+    font-size: 1em;
 }
 
 .pagina.clara{
@@ -94,7 +98,7 @@
 }
 
 aside{
-    height: var(--altura-pagina);
+    min-height: var(--altura-pagina);
     width: var(--largura-aside);
 
     background: var(--cor-blocos);
@@ -104,9 +108,6 @@ aside{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    position: fixed;
-
-    font-size: 1.15em;
 }
 
 aside .card{
@@ -118,8 +119,8 @@ aside .card{
     border-radius: 10px;
 }
 
-aside .card h2{
-    margin: 10px;
+aside .card h1{
+    margin: 0 10px;
     margin-top: 5px;
 }
 
@@ -127,7 +128,6 @@ aside .card ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-
     gap: 5px;
 }
 
@@ -159,13 +159,14 @@ aside .card .projetos a:hover{
 aside .card.sobre{
     height: calc(1.5 * var(--altura-conteudo-main));
     line-height: 2em;
+
+    height: auto;
 }
 
 aside .card.sobre .foto{
     border-radius: 50%;
     
     width: 170px;
-    height: 170px;
 
     margin: auto;
     margin-top: 20px;
@@ -182,6 +183,7 @@ aside .card.sobre .social{
     gap: 10px;
     padding: 10px 0;
 }
+
 aside .card.sobre .social li{
     padding: 0 10px;
     display: flex;
@@ -194,11 +196,13 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     justify-content: space-between;
-    position: relative;
-    left: calc(var(--largura-aside) + 10px);
+    /* left: calc(var(--largura-aside) + 10px); */
+
     border-radius: 15px;
     min-height: var(--altura-pagina);
+
     width: var(--largura-main);
     padding: 10px;
 
@@ -218,7 +222,7 @@ header{
     
     /* height: calc(0.3 * var(--altura-conteudo-main)); */
 
-    min-height: 250px;
+    min-height: var(--altura-cabecalho);
     border-radius: 15px;
 }
 
@@ -228,6 +232,6 @@ section{
     
     /* height: calc(0.7 * var(--altura-conteudo-main)); */
     
-    height: calc(100vh - 300px);
+    min-height: var(--altura-artigo);
     border-radius: 15px;
 }
