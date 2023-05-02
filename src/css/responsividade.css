@@ -44,4 +44,19 @@
     main{
         width: 100%;
     }
+
+    .lampada{
+        height: 20px;
+        width: 20px;
+        top: 30px;
+    }
+    .lampada.noite::after{
+        height: 20px;
+        width: 20px;
+        right: -6px;
+    }
+    .lampada.dia{
+        top: 30px;
+        right: 30px;
+    }
 }
