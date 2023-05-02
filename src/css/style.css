@@ -1,6 +1,6 @@
 :root{
     --largura-aside: 300px;
-    --largura-main: calc(100% - 300px);
+    --largura-main: calc(100% - 310px);
 
     --altura-pagina: calc(100vh - 20px);
     --altura-conteudo-main: calc(100vh - 20px);
@@ -9,9 +9,9 @@
     --fonte-destaque-cond: 'Roboto Condensed', sans-serif;
     --fonte-destaque-mono: 'Roboto Mono', monospace;
 
-    --cor-fundo-claro: #cce5fc;
-    --cor-blocos-claro: #2c3e4d;
-    --cor-destaque-claro: #e5f3fd;
+    --cor-fundo-claro: #bbdaf7;
+    --cor-blocos-claro: #212f3a;
+    --cor-destaque-claro: #cce5fc;
     --cor-fonte-claro: #ffffff;
 
     --cor-fundo-escuro: #1e3344;
@@ -35,6 +35,7 @@
     display: flex;
     gap: 10px;
     padding: 10px;
+    min-height: 100vh;
 
     flex-wrap: nowrap;
 
@@ -63,6 +64,8 @@
     border-radius: 50%;
     background-color: #ffffff;
     border: none;
+
+    z-index: 999;
 }
 .lampada.noite{
     background-color: var(--cor-blocos-claro);
@@ -101,11 +104,14 @@ aside{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: fixed;
+
+    font-size: 1.15em;
 }
 
 aside .card{
     background: var(--cor-destaque);
-    padding: 10px;
+    padding: 5px;
     height: 100%;
 
     text-align: center;
@@ -114,6 +120,7 @@ aside .card{
 
 aside .card h2{
     margin: 10px;
+    margin-top: 5px;
 }
 
 aside .card ul{
@@ -124,19 +131,29 @@ aside .card ul{
     gap: 5px;
 }
 
-aside a{
+aside .card ul li{
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+aside .card a{
     text-decoration: none;
     color: var(--cor-fonte);
 
     transition: 0.3s;
 }
 
-aside a:hover{
+aside .card a:hover{
     text-shadow: 1px 1px 2px var(--cor-blocos);
     transform: scale(1.2);
     transition: 0.3s;
+}
 
-    text-decoration: underline;
+aside .card .projetos a:hover{
+    text-shadow: 1px 1px 2px var(--cor-blocos);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 aside .card.sobre{
@@ -159,10 +176,8 @@ aside .card.sobre .foto{
 }
 
 aside .card.sobre .social{
-    list-style: none;
     display: flex;
     flex-direction: row;
-    
     justify-content: center;
     gap: 10px;
     padding: 10px 0;
@@ -171,7 +186,6 @@ aside .card.sobre .social li{
     padding: 0 10px;
     display: flex;
     gap: 5px;
-
     transition: 0.3s;
 }
 
@@ -181,32 +195,39 @@ main{
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
-
+    position: relative;
+    left: calc(var(--largura-aside) + 10px);
     border-radius: 15px;
-
-    height: var(--altura-pagina);
+    min-height: var(--altura-pagina);
     width: var(--largura-main);
     padding: 10px;
+
+    font-size: 1.2em;
+}
+
+main p{
+    padding: 10px 0px;
+    text-indent: 30px;
+
+    text-align: justify;
 }
 
 header{
     background: var(--cor-destaque);
-    padding: 10px;
+    padding: 20px 30px;
     
-    height: calc(0.2 * var(--altura-conteudo-main));
+    /* height: calc(0.3 * var(--altura-conteudo-main)); */
+
+    min-height: 250px;
     border-radius: 15px;
 }
+
 section{
     background: var(--cor-destaque);
-    padding: 10px;
+    padding: 20px 30px;
     
-    height: calc(0.7 * var(--altura-conteudo-main));
-    border-radius: 15px;
-}
-footer{
-    background: var(--cor-destaque);
-    padding: 10px;
+    /* height: calc(0.7 * var(--altura-conteudo-main)); */
     
-    height: calc(0.1 * var(--altura-conteudo-main));
+    height: calc(100vh - 300px);
     border-radius: 15px;
 }
