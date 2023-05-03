@@ -3,7 +3,8 @@
     --largura-main: calc(100%);
 
     --altura-pagina: calc(100vh - 20px);
-    --altura-cabecalho: 250px;
+    --altura-aside: var(--altura-pagina);
+    --altura-cabecalho: 100px;
     --altura-artigo: calc(100vh - var(--altura-cabecalho) - 50px);
     --altura-conteudo-main: calc(100% - 20px);
     
@@ -12,8 +13,8 @@
     --fonte-destaque-cond: 'Roboto Condensed', sans-serif;
     --fonte-destaque-mono: 'Roboto Mono', monospace;
 
-    --cor-fundo-claro: #cfcfcf;
-    --cor-blocos-claro: #0e1922;
+    --cor-fundo-claro: #8b8b8b;
+    --cor-blocos-claro: #2f3841;
     --cor-destaque-claro: #e7e7e7;
     --cor-fonte-claro: #ffffff;
 
@@ -98,7 +99,7 @@
 }
 
 aside{
-    min-height: var(--altura-pagina);
+    min-height: var(--altura-aside);
     width: var(--largura-aside);
 
     background: var(--cor-blocos);
@@ -145,7 +146,7 @@ aside .card a{
 }
 
 aside .card a:hover{
-    text-shadow: 1px 1px 2px var(--cor-blocos);
+    text-shadow: 0px 0px 2px var(--cor-blocos);
     transform: scale(1.2);
     transition: 0.3s;
 }
@@ -191,6 +192,23 @@ aside .card.sobre .social li{
     transition: 0.3s;
 }
 
+aside .card .menu{
+    padding: 10px 0;
+}
+aside .card .menu li{
+    background-color: var(--cor-blocos);
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 10px;
+
+    color: var(--cor-fonte-claro);
+}
+aside .card .menu li:hover{
+    transform: scale(0.95);
+    background-color: var(--cor-fundo);
+    cursor: pointer;
+}
+
 main{
     background: var(--cor-blocos);
     display: flex;
@@ -198,7 +216,6 @@ main{
     gap: 10px;
 
     justify-content: space-between;
-    /* left: calc(var(--largura-aside) + 10px); */
 
     border-radius: 15px;
     min-height: var(--altura-pagina);
@@ -216,9 +233,21 @@ main p{
     text-align: justify;
 }
 
+main .artigos{
+    display: none;
+}
+
+main .artigos.ativo{
+    display: block;
+}
+
 header{
     background: var(--cor-destaque);
     padding: 20px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     /* height: calc(0.3 * var(--altura-conteudo-main)); */
 
