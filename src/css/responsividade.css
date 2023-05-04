@@ -61,7 +61,7 @@
     }
 
     aside .card.indice{
-        display: block;
+        display: none;
 
         position: absolute;
         height: auto;
@@ -75,6 +75,10 @@
         padding: 5px;
 
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    }
+    
+    aside .card.indice.ativo{
+        display: block;
     }
 
     aside .card.indice h1{
