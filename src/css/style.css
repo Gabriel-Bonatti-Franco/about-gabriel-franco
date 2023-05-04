@@ -120,6 +120,10 @@ aside .card{
     border-radius: 10px;
 }
 
+aside .card .botaoIndice{
+    display: none;
+}
+
 aside .card h1{
     margin: 0 10px;
     margin-top: 5px;
@@ -207,10 +211,6 @@ aside .card .menu li:hover{
     transform: scale(0.95);
     background-color: var(--cor-fundo);
     cursor: pointer;
-}
-
-aside .card .botaoIndice{
-    display: none;
 }
 
 main{
