@@ -14,7 +14,7 @@
 
 @media (max-width: 900px){
     :root{
-        --altura-aside: calc(0.30 * var(--altura-pagina));
+        --altura-aside: 200px;
         --altura-artigo: calc(100vh - var(--altura-cabecalho) - var(--altura-aside) - 110px);
     }
     
@@ -26,7 +26,7 @@
         flex-direction: row;
 
         width: 100%;
-        min-height: var(--altura-aside);
+        height: var(--altura-aside);
     }
 
     aside .card{
@@ -42,8 +42,9 @@
     }
 
     aside .card.sobre .foto{
-        width: 130px;
-        margin: 10px;
+        width: auto;
+        height: 100%;
+        margin: 20px;
     }
     
     aside .card .botaoIndice{
