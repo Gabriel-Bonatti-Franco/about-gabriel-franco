@@ -49,18 +49,18 @@
     aside .card .botaoIndice{
         display: block;
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: calc(var(--altura-aside) - 50px);
+        right: 25px;
     
         background-color: red;
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
     
         border-radius: 10px;
     }
 
     aside .card.indice{
-        display: none;
+        display: block;
 
         position: absolute;
         height: auto;
@@ -68,7 +68,7 @@
 
         border: 2px solid var(--cor-blocos);
 
-        bottom: -50px;
+        top: calc(var(--altura-aside) + 100px);
         right: 25px;
 
         padding: 5px;
