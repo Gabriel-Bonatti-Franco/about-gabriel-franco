@@ -19,7 +19,24 @@ function trocarTema(){
 
 }
 
+function mudarMenuSuspenso(){
+    
+    if (menu.classList == "card indice"){
+        
+        menu.classList.add("ativo")
+                
+    }else if (menu.classList == "card indice ativo"){
+        
+        menu.classList.remove("ativo")
+        
+    }
+    
+}
+
 var botaoTema = document.querySelector('.lampada')
 var paginaWeb = document.querySelector('.pagina')
+var botaoMenu = document.querySelector('.botaoIndice')
+var menu = document.querySelector('.indice')
 
 botaoTema.addEventListener('click', trocarTema)
+botaoMenu.addEventListener('click', mudarMenuSuspenso)
