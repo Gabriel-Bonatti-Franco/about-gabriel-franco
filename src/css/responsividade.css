@@ -14,7 +14,7 @@
 
 @media (max-width: 900px){
     :root{
-        --altura-aside: calc(0.15 * var(--altura-pagina));
+        --altura-aside: calc(0.30 * var(--altura-pagina));
         --altura-artigo: calc(100vh - var(--altura-cabecalho) - var(--altura-aside) - 110px);
     }
     
@@ -49,7 +49,7 @@
     aside .card .botaoIndice{
         display: block;
         position: absolute;
-        top: calc(var(--altura-aside) - 50px);
+        top: calc(var(--altura-aside) - 35px);
         right: 25px;
     
         background-color: var(--cor-fundo);
@@ -68,7 +68,7 @@
 
         border: 2px solid var(--cor-blocos);
 
-        top: calc(var(--altura-aside) + 100px);
+        top: calc(var(--altura-aside) + 15px);
         right: 25px;
 
         padding: 5px;
