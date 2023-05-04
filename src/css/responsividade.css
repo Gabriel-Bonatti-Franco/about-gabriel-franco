@@ -46,7 +46,7 @@
         margin: 10px;
     }
     
-    aside .card.sobre .botaoIndice{
+    aside .card .botaoIndice{
         display: block;
         position: absolute;
         bottom: 10px;
@@ -60,7 +60,7 @@
     }
 
     aside .card.indice{
-        display: block;
+        display: none;
 
         position: absolute;
         height: auto;
