@@ -49,12 +49,12 @@
     aside .card .botaoIndice{
         display: block;
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        top: 10px;
+        left: 10px;
     
-        background-color: var(--cor-fundo);
-        height: 30px;
-        width: 30px;
+        background-color: red;
+        height: 50px;
+        width: 50px;
     
         border-radius: 10px;
     }
