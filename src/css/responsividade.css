@@ -46,6 +46,49 @@
         margin: 10px;
     }
 
+    aside .card.indice{
+        display: block;
+
+        position: absolute;
+        height: auto;
+        width: auto;
+
+        border: 2px solid var(--cor-blocos);
+
+        top: calc(var(--altura-aside) + 60px);
+        right: 25px;
+
+        padding: 5px;
+
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    aside .card.indice h1{
+        display: none;
+    }
+
+    aside .card.indice ul{
+        padding: 0;
+    }
+
+    aside .card.indice li{
+        margin: 0;
+        padding: 5px 30px;
+    }
+
+    aside .card.indice .botaoIndice{
+        display: block;
+        position: absolute;
+        top: -55px;
+        right: 0;
+    
+        background-color: var(--cor-fundo);
+        height: 30px;
+        width: 30px;
+    
+        border-radius: 10px;
+    }
+
     main{
         width: 100%;
         min-height: var(--altura-artigo);

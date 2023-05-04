@@ -209,6 +209,10 @@ aside .card .menu li:hover{
     cursor: pointer;
 }
 
+aside .card .botaoIndice{
+    display: none;
+}
+
 main{
     background: var(--cor-blocos);
     display: flex;
