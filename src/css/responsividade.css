@@ -45,6 +45,19 @@
         width: 130px;
         margin: 10px;
     }
+    
+    aside .card.sobre .botaoIndice{
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    
+        background-color: var(--cor-fundo);
+        height: 30px;
+        width: 30px;
+    
+        border-radius: 10px;
+    }
 
     aside .card.indice{
         display: block;
@@ -74,19 +87,6 @@
     aside .card.indice li{
         margin: 0;
         padding: 5px 30px;
-    }
-
-    aside .card.indice .botaoIndice{
-        display: block;
-        position: absolute;
-        top: -55px;
-        right: 0;
-    
-        background-color: var(--cor-fundo);
-        height: 30px;
-        width: 30px;
-    
-        border-radius: 10px;
     }
 
     main{
