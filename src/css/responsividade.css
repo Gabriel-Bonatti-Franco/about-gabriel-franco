@@ -52,7 +52,7 @@
         top: calc(var(--altura-aside) - 50px);
         right: 25px;
     
-        background-color: red;
+        background-color: var(--cor-fundo);
         height: 30px;
         width: 30px;
     
