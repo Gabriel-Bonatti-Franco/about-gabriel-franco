@@ -68,7 +68,7 @@
 
         border: 2px solid var(--cor-blocos);
 
-        top: calc(var(--altura-aside) + 60px);
+        bottom: -50px;
         right: 25px;
 
         padding: 5px;
