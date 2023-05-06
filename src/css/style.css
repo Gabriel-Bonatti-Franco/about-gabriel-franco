@@ -58,8 +58,6 @@
     --cor-blocos: var(--cor-blocos-escuro);
     --cor-destaque: var(--cor-destaque-escuro);
     --cor-fonte: var(--cor-fonte-claro);
-
-    transition: 0.5s;
 }
 
 .pagina.clara{
@@ -67,8 +65,6 @@
     --cor-blocos: var(--cor-blocos-claro);
     --cor-destaque: var(--cor-destaque-claro);
     --cor-fonte: var(--cor-fonte-escuro);
-
-    transition: 0.5s;
 }
 
 .lampada{
@@ -84,6 +80,8 @@
     border: none;
 
     z-index: 999;
+
+    transition: background-color 0s;
 }
 .lampada.noite{
     background-color: var(--cor-blocos-claro);
