@@ -24,10 +24,12 @@ function mudarMenuSuspenso(){
     if (menu.classList == "card indice"){
         
         menu.classList.add("ativo")
+        botaoMenu.classList.add("ativo")
                 
     }else if (menu.classList == "card indice ativo"){
         
         menu.classList.remove("ativo")
+        botaoMenu.classList.remove("ativo")
         
     }
     

@@ -76,6 +76,8 @@
         background-color: var(--cor-destaque);
 
         z-index: 999;
+
+        transition: 0.5s;
     }
 
     aside .card .botaoIndice::before{
@@ -93,6 +95,46 @@
         background-color: var(--cor-destaque);
 
         z-index: 999;
+
+        transition: 0.5s;
+    }
+
+    aside .card .botaoIndice.ativo::after{
+        content: '';
+        position: absolute;
+
+        height: 26px;
+        width: 2px;
+
+        transform: rotate(-45deg);
+
+        top: 2px;
+        left: 14px;
+
+        background-color: var(--cor-destaque);
+
+        z-index: 999;
+
+        transition: 0.5s;
+    }
+
+    aside .card .botaoIndice.ativo::before{
+        content: '';
+        position: absolute;
+
+        height: 26px;
+        width: 2px;
+
+        transform: rotate(45deg);
+
+        top: 2px;
+        right: 14px;
+
+        background-color: var(--cor-destaque);
+
+        z-index: 999;
+
+        transition: 0.5s;
     }
 
     aside .card.indice{
