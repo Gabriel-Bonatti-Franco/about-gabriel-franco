@@ -15,7 +15,7 @@
 @media (max-width: 900px){
     :root{
         --altura-aside: 200px;
-        --altura-artigo: calc(100vh - var(--altura-cabecalho) - var(--altura-aside) - 110px);
+        --altura-artigo: calc(100vh - var(--altura-cabecalho) - var(--altura-aside) - 60px);
     }
     
     .pagina{
@@ -61,6 +61,40 @@
         border-radius: 10px;
     }
 
+    aside .card .botaoIndice::after{
+        content: '';
+        position: absolute;
+
+        height: 14px;
+        width: 2px;
+
+        transform: rotate(-45deg);
+
+        top: 8px;
+        left: 9px;
+
+        background-color: var(--cor-destaque);
+
+        z-index: 999;
+    }
+
+    aside .card .botaoIndice::before{
+        content: '';
+        position: absolute;
+
+        height: 14px;
+        width: 2px;
+
+        transform: rotate(45deg);
+
+        top: 8px;
+        right: 9px;
+
+        background-color: var(--cor-destaque);
+
+        z-index: 999;
+    }
+
     aside .card.indice{
         display: none;
 
@@ -77,19 +111,15 @@
 
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
     }
-    
     aside .card.indice.ativo{
         display: block;
     }
-
     aside .card.indice h1{
         display: none;
     }
-
     aside .card.indice ul{
         padding: 0;
     }
-
     aside .card.indice li{
         margin: 0;
         padding: 5px 30px;
@@ -97,7 +127,7 @@
 
     main{
         width: 100%;
-        min-height: var(--altura-artigo);
+        min-height: calc(var(--altura-artigo) + var(--altura-cabecalho));
     }
 
     .lampada{
