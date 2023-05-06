@@ -81,10 +81,11 @@
 
     z-index: 999;
 
-    transition: background-color 0s;
+    transition: 0.5s;
 }
 .lampada.noite{
     background-color: var(--cor-blocos-claro);
+    transition: 0.5s;
 }
 .lampada.noite::after{
     content: "";
@@ -98,6 +99,8 @@
     border-radius: 50%;
     background-color: var(--cor-destaque);
     border: none;
+
+    transition: 0.5s;
 }
 .lampada.dia{
     position: absolute;
@@ -107,6 +110,8 @@
     border-radius: 50%;
     background-color: white;
     border: 3px dashed var(--cor-destaque);
+
+    transition: 0.5s;
 }
 
 aside{
