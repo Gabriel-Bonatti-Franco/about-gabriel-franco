@@ -51,11 +51,22 @@
     font-size: 1em;
 }
 
+.pagina{
+    --cor-fundo: var(--cor-fundo-escuro);
+    --cor-blocos: var(--cor-blocos-escuro);
+    --cor-destaque: var(--cor-destaque-escuro);
+    --cor-fonte: var(--cor-fonte-claro);
+
+    transition: 0.5s;
+}
+
 .pagina.clara{
     --cor-fundo: var(--cor-fundo-claro);
     --cor-blocos: var(--cor-blocos-claro);
     --cor-destaque: var(--cor-destaque-claro);
     --cor-fonte: var(--cor-fonte-escuro);
+
+    transition: 0.5s;
 }
 
 .lampada{
