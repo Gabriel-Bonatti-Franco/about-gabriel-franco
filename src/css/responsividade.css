@@ -148,7 +148,7 @@
     }
     aside .card.indice.ativo{
         display: block;
-        animation: aparecer 1s;
+        animation: aparecer 0.6s;
     }
 
     aside .card.indice h1{
