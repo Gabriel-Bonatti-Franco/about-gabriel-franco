@@ -181,4 +181,15 @@
         top: 30px;
         right: 30px;
     }
+
+    .projetos{
+        
+    }
+
+    .projetos .projeto{
+        background-color: var(--cor-blocos)
+        color: var(--cor-fundo-claro)
+        padding: 10px;
+        border-radius: 20px;
+    }
 }
