@@ -92,18 +92,21 @@
     width: 25px;
 
     position: absolute;
-    top: 35px;
+    top: 30px;
     right: 30px;
 
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: white;
     border: none;
 
     z-index: 999;
 }
+.lampada.dia{
+    border: 3px dashed var(--cor-destaque);
+    animation: aparecer 1.5s;
+}
 .lampada.noite{
     background-color: var(--cor-blocos-claro);
-
     animation: aparecer 1.5s;
 }
 .lampada.noite::after{
@@ -122,17 +125,6 @@
 
     transition: backgroud-color 0.5s;
     animation: aparecer 1s;
-}
-.lampada.dia{
-    position: absolute;
-    top: 35px;
-    right: 32px;
-
-    border-radius: 50%;
-    background-color: white;
-    border: 3px dashed var(--cor-destaque);
-
-    animation: aparecer 1.5s;
 }
 
 aside{
