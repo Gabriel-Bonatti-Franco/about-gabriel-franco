@@ -38,7 +38,11 @@ function mudarMenuSuspenso(){
 var botaoTema = document.querySelector('.lampada')
 var paginaWeb = document.querySelector('.pagina')
 var botaoMenu = document.querySelector('.botaoIndice')
+
 var menu = document.querySelector('.indice')
+
+var secoes = document.querySelectorAll('section')
+var opcoesMenu = document.querySelectorAll('.opcaoMenu')
 
 botaoTema.addEventListener('click', trocarTema)
 botaoMenu.addEventListener('click', mudarMenuSuspenso)
