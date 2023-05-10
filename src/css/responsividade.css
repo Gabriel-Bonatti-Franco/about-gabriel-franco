@@ -1,3 +1,10 @@
+@media (max-width: 1200px){
+    .projetos .projeto{
+        width: 40%;
+    }
+}
+
+
 @media (max-width: 1000px){
     :root{
         --largura-aside: 250px;
@@ -180,5 +187,9 @@
     .lampada.dia{
         top: 30px;
         right: 30px;
+    }
+    
+    .projetos .projeto{
+        width: 40%;
     }
 }
