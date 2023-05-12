@@ -14,7 +14,7 @@
     --fonte-destaque-mono: 'Roboto Mono', monospace;
 
     --cor-fundo-claro: #8b8b8b;
-    --cor-blocos-claro: #2f3841;
+    --cor-blocos-claro: #20262c;
     --cor-destaque-claro: #e7e7e7;
     --cor-fonte-claro: #ffffff;
 
@@ -302,6 +302,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    padding: 15px 0;
 
     width: 100%;
     height: 40%;
