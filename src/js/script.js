@@ -78,8 +78,20 @@ var menu = document.querySelector('.indice')
 var secoes = document.querySelectorAll('.artigos')
 var opcoesMenu = document.querySelectorAll('.opcaoMenu')
 var titulo = document.querySelector('#tituloArtigo')
+var PrimeiroArtigo = "Experiência"
+
+// Experiência - Projetos - Objetivos - Contatos
 
 botaoTema.addEventListener('click', trocarTema)
 botaoMenu.addEventListener('click', mudarMenuSuspenso)
 
 opcoesMenu.forEach((opcao) => escolherArtigo(opcao));
+
+secoes.forEach((secao) =>{
+
+    if (secao.id == PrimeiroArtigo){
+        mudarArtigo(PrimeiroArtigo)
+        titulo.innerText = secao.id
+    }
+
+})
