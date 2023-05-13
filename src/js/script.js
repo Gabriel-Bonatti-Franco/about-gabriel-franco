@@ -53,21 +53,38 @@ function escolherArtigo(opcao) {
     })
 }
 
-function mudarArtigo(textoOpcao) {
+function mudarArtigo(Opcao) {
     secoes.forEach((secao) => {
 
-        if (secao.id == textoOpcao) {
+        if (secao.id == Opcao) {
             secao.classList.add('ativo')
-
-        } else {
+        } else{
             secao.classList.remove('ativo')
-
         }
 
     })
 
     fecharMenu()
 }
+
+function inicializar() {
+
+    
+
+    secoes.forEach((secao) => {
+    
+        if (secao.id == PrimeiroArtigo) {
+            mudarArtigo(PrimeiroArtigo)
+            titulo.innerText = secao.id
+        }
+    
+    })
+}
+
+var PrimeiroArtigo = "Projetos"
+// Experiência - Projetos - Objetivos - Contatos
+
+window.addEventListener('load', inicializar)
 
 var botaoTema = document.querySelector('.lampada')
 var paginaWeb = document.querySelector('.pagina')
@@ -78,20 +95,12 @@ var menu = document.querySelector('.indice')
 var secoes = document.querySelectorAll('.artigos')
 var opcoesMenu = document.querySelectorAll('.opcaoMenu')
 var titulo = document.querySelector('#tituloArtigo')
-var PrimeiroArtigo = "Experiência"
 
-// Experiência - Projetos - Objetivos - Contatos
+
 
 botaoTema.addEventListener('click', trocarTema)
 botaoMenu.addEventListener('click', mudarMenuSuspenso)
 
 opcoesMenu.forEach((opcao) => escolherArtigo(opcao));
 
-secoes.forEach((secao) =>{
 
-    if (secao.id == PrimeiroArtigo){
-        mudarArtigo(PrimeiroArtigo)
-        titulo.innerText = secao.id
-    }
-
-})
