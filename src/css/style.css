@@ -327,6 +327,7 @@ section{
 .projetos{
     max-width: 1000px;
     position: relative;
+    color: var(cor-fonte-claro);
 
     margin: 0 auto;
 }
@@ -340,7 +341,7 @@ section{
 
     cursor: pointer;
     background: var(--cor-blocos);
-    color: var(--cor-fonte);
+    color: var(--cor-fonte-claro);
 
     border-radius: 50%;
 
