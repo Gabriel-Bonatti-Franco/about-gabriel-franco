@@ -201,10 +201,10 @@
     }
 
     .projetos i#left{ 
-         left: -20px; 
+         left: -25px; 
     } 
   
     .projetos i#rigth{ 
-         right: -20px; 
+         right: -25px; 
     }
 }
