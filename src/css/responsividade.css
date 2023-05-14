@@ -2,6 +2,9 @@
     .projetos .projeto{
         width: 40%;
     }
+    .projetos .projeto{ 
+         min-width: calc(calc(100% - 14px) / 2);
+    }
 }
 
 
@@ -191,5 +194,9 @@
     
     .projetos .projeto{
         width: 80%;
+    }
+
+    .projetos .projeto{ 
+         min-width: 100%;
     }
 }
