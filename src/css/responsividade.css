@@ -199,4 +199,12 @@
     .projetos .projeto{ 
          min-width: 100%;
     }
+
+    .projetos i#left{ 
+         left: -15px; 
+    } 
+  
+    .projetos i#rigth{ 
+         right: -15px; 
+    }
 }
