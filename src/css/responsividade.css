@@ -192,8 +192,8 @@
         right: 30px;
     }
     
-    .projetos .projeto{
-        width: 80%;
+    .projetos{
+        max-width: 100%;
     }
 
     .projetos .projeto{ 
