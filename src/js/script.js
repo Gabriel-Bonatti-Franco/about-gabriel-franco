@@ -96,11 +96,13 @@ var secoes = document.querySelectorAll('.artigos')
 var opcoesMenu = document.querySelectorAll('.opcaoMenu')
 var titulo = document.querySelector('#tituloArtigo')
 
-
-
 botaoTema.addEventListener('click', trocarTema)
 botaoMenu.addEventListener('click', mudarMenuSuspenso)
 
 opcoesMenu.forEach((opcao) => escolherArtigo(opcao));
+
+var setas = document.querySelectorAll('.projetos i')
+
+
 
 
