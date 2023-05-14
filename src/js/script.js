@@ -101,7 +101,11 @@ botaoMenu.addEventListener('click', mudarMenuSuspenso)
 
 opcoesMenu.forEach((opcao) => escolherArtigo(opcao));
 
-var setas = document.querySelectorAll('.projetos i')
+var setas = document.querySelectorAll('.projetos i');
+
+var primeiroProjeto = document.querySelectorAll('.projeto')[0];
+
+var larguraProjeto = primeiroProjeto.width;
 
 
 
