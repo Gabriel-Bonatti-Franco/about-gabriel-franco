@@ -370,9 +370,8 @@ section{
 
 .projetos .projeto{
     height: 200px;
-    object-fit: cover;
-    margin-left: 14px;
     min-width: calc(calc(100% - 28px) / 3);
+    margin-left: 14px;
     white-space: nowrap;
     border-radius: 20px;
 

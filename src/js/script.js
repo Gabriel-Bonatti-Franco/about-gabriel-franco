@@ -2,19 +2,19 @@ function trocarTema(){
 
     if (botaoTema.classList == "lampada dia"){
         
-        botaoTema.classList.remove("dia")
-        botaoTema.classList.add("noite")
+        botaoTema.classList.remove("dia");
+        botaoTema.classList.add("noite");
 
-        paginaWeb.classList.remove("escura")
-        paginaWeb.classList.add("clara")
+        paginaWeb.classList.remove("escura");
+        paginaWeb.classList.add("clara");
                 
     }else if (botaoTema.classList == "lampada noite"){
         
-        botaoTema.classList.remove("noite")
-        botaoTema.classList.add("dia")
+        botaoTema.classList.remove("noite");
+        botaoTema.classList.add("dia");
 
-        paginaWeb.classList.remove("clara")
-        paginaWeb.classList.add("escura")
+        paginaWeb.classList.remove("clara");
+        paginaWeb.classList.add("escura");
     }
 
 }
@@ -23,32 +23,32 @@ function mudarMenuSuspenso(){
     
     if (menu.classList == "card indice"){
         
-        abrirMenu()
+        abrirMenu();
                 
     }else if (menu.classList == "card indice ativo"){
         
-        fecharMenu()
+        fecharMenu();
         
     }
     
 }
 
 function abrirMenu() {
-    menu.classList.add("ativo")
-    botaoMenu.classList.add("ativo")
+    menu.classList.add("ativo");
+    botaoMenu.classList.add("ativo");
 }
 
 function fecharMenu() {
-    menu.classList.remove("ativo")
-    botaoMenu.classList.remove("ativo")
+    menu.classList.remove("ativo");
+    botaoMenu.classList.remove("ativo");
 }
 
 function escolherArtigo(opcao) {
     opcao.addEventListener('click', () => {
 
-        let textoOpcao = opcao.innerText
-        mudarArtigo(textoOpcao)
-        titulo.innerText = textoOpcao
+        let textoOpcao = opcao.innerText;
+        mudarArtigo(textoOpcao);
+        titulo.innerText = textoOpcao;
 
     })
 }
@@ -57,55 +57,62 @@ function mudarArtigo(Opcao) {
     secoes.forEach((secao) => {
 
         if (secao.id == Opcao) {
-            secao.classList.add('ativo')
+            secao.classList.add('ativo');
         } else{
-            secao.classList.remove('ativo')
+            secao.classList.remove('ativo');
         }
 
     })
 
-    fecharMenu()
+    fecharMenu();
 }
 
 function inicializar() {
 
-    
-
     secoes.forEach((secao) => {
     
         if (secao.id == PrimeiroArtigo) {
-            mudarArtigo(PrimeiroArtigo)
-            titulo.innerText = secao.id
+            mudarArtigo(PrimeiroArtigo);
+            titulo.innerText = secao.id;
         }
     
-    })
+    });
 }
 
-var PrimeiroArtigo = "Projetos"
+const PrimeiroArtigo = "Projetos";
 // Experiência - Projetos - Objetivos - Contatos
 
-window.addEventListener('load', inicializar)
+window.addEventListener('load', inicializar);
 
-var botaoTema = document.querySelector('.lampada')
-var paginaWeb = document.querySelector('.pagina')
-var botaoMenu = document.querySelector('.botaoIndice')
+const botaoTema = document.querySelector('.lampada');
+const paginaWeb = document.querySelector('.pagina');
+const botaoMenu = document.querySelector('.botaoIndice');
 
-var menu = document.querySelector('.indice')
+const menu = document.querySelector('.indice');
 
-var secoes = document.querySelectorAll('.artigos')
-var opcoesMenu = document.querySelectorAll('.opcaoMenu')
-var titulo = document.querySelector('#tituloArtigo')
+const secoes = document.querySelectorAll('.artigos');
+const opcoesMenu = document.querySelectorAll('.opcaoMenu');
+const titulo = document.querySelector('#tituloArtigo');
 
-botaoTema.addEventListener('click', trocarTema)
-botaoMenu.addEventListener('click', mudarMenuSuspenso)
+botaoTema.addEventListener('click', trocarTema);
+botaoMenu.addEventListener('click', mudarMenuSuspenso);
 
 opcoesMenu.forEach((opcao) => escolherArtigo(opcao));
 
-var setas = document.querySelectorAll('.projetos i');
+const setas = document.querySelectorAll('.projetos i');
 
-var primeiroProjeto = document.querySelectorAll('.projeto')[0];
+const primeiroProjeto = document.querySelectorAll('.projeto')[0];
 
-var larguraProjeto = primeiroProjeto.width;
+let larguraProjeto = primeiroProjeto.clientWidth;
+
+setas.forEach((seta) => {
+
+    seta.addEventListener('click', () => {
+        console.log(primeiroProjeto);
+        console.log(larguraProjeto);
+    });
+
+});
 
 
 
