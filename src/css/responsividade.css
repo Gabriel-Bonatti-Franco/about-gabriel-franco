@@ -1,20 +1,47 @@
+@media (max-width: 1600px){
+    .projetos{
+        width: 1000px;
+    }
+
+    .projetos .carrossel .projeto{
+        min-width: calc(calc(100% - 30px) / 3);
+    }
+}
+
 @media (max-width: 1400px){
     .projetos{
-        max-width: 800px;
+        width: 800px;
+    }
+
+    .projetos .carrossel .projeto{
+        min-width: calc(calc(100% - 15px) / 2);
     }
 }
-
 
 @media (max-width: 1200px){
-    .projetos{
-        max-width: 600px;
+    
+    .projetos i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
     }
 
-    .projetos .projeto{ 
-         min-width: calc(calc(100% - 14px) / 2);
+    .projetos i#left{
+        left: -35px;
+    }
+
+    .projetos i#right{
+        right: -35px;
+    }
+    
+    .projetos{
+        width: 550px;
+    }
+
+    .projetos .carrossel .projeto{
+        min-width: 100%;
     }
 }
-
 
 @media (max-width: 1000px){
     :root{
@@ -25,10 +52,6 @@
     }
     aside .card.sobre .foto{
         width: 150px;
-    }
-
-    .projetos{
-        max-width: 580px;
     }
 
 }
@@ -203,26 +226,51 @@
         top: 30px;
         right: 30px;
     }
-    
+
+    .projetos i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .projetos i#left{
+        left: -40px;
+    }
+
+    .projetos i#right{
+        right: -40px;
+    }
+
     .projetos{
-        max-width: 100%;
+        width: 90%;
     }
 
-    .projetos .projeto{ 
-        min-width: calc(calc(100% - 14) / 2);
+    .projetos .carrossel .projeto{
+        min-width: 100%;
     }
-
-    .projetos i#left{ 
-        left: -20px; 
-    } 
-  
-    .projetos i#rigth{ 
-        right: -20px; 
-    }
+    
 }
 
 @media (max-width: 550px){
-    .projetos .projeto{ 
+    .projetos i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .projetos i#left{
+        left: -35px;
+    }
+
+    .projetos i#right{
+        right: -35px;
+    }
+
+    .projetos{
+        width: 90%;
+    }
+
+    .projetos .carrossel .projeto{
         min-width: 100%;
-   }
+    }
 }
