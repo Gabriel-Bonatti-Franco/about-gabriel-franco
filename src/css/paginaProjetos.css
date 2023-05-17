@@ -10,6 +10,19 @@
     position: relative;
 }
 
+.projetos a{
+    color: var(--cor-fonte-claro);
+    text-decoration: none;
+}
+
+.projetos a:visited{
+    color: var(--cor-fonte-claro)
+} /* links visitados */
+
+.projetos a:active{
+    text-decoration: underline;
+} /* links ativos */
+
 .projetos .carrossel{
     display: flex;
     overflow: hidden;
