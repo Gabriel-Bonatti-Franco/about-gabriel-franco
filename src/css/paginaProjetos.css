@@ -19,8 +19,12 @@
     color: var(--cor-fonte-claro)
 } /* links visitados */
 
-.projetos a:active{
+.projetos a:hover{
     text-decoration: underline;
+} /* links hover */
+
+.projetos a:active{
+    color: var(--cor-fonte-escuro)
 } /* links ativos */
 
 .projetos .carrossel{
