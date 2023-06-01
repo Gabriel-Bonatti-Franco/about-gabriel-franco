@@ -5,7 +5,6 @@ function carregamento(){
 
     const page = document.querySelector('.pagina')
 
-    page.classList.remove('.
-carregando')
+    page.classList.remove('.carregando')
 
 }
