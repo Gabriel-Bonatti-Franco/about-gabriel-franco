@@ -94,13 +94,15 @@
     }
 }
 
+.pagina.carregando{
+    overflow: hidden;
+}
+
 .pagina{
     display: flex;
     gap: 10px;
     padding: 10px;
     min-height: 100vh;
-
-    overflow: hidden;
 
     flex-wrap: nowrap;
 
@@ -109,8 +111,7 @@
     
     background-color: var(--cor-fundo);
 
-    font-size: 1em;
-
+    font-size: 1em;
 }
 
 .pagina{
