@@ -13,9 +13,9 @@
     --fonte-destaque-cond: 'Roboto Condensed', sans-serif;
     --fonte-destaque-mono: 'Roboto Mono', monospace;
 
-    --cor-fundo-claro: #8b8b8b;
+    --cor-fundo-claro: #727275;
     --cor-blocos-claro: #20262c;
-    --cor-destaque-claro: #e7e7e7;
+    --cor-destaque-claro: #dadada;
     --cor-fonte-claro: #ffffff;
 
     --cor-fundo-escuro: #1e3344;
@@ -69,8 +69,8 @@
 
     z-index: 9999;
 
-    background-color: black;
-    opacity: 0.9;
+    background-color: var(--cor-fundo);
+
 }
 .preload .circulo{
     background-color: transparent;
@@ -78,8 +78,8 @@
     height: 80px;
     border-radius: 50%;
 
-    border: 5px dotted var(--cor-fonte);
-    opacity: 0.4;
+    border: 15px dotted var(--cor-blocos);
+    opacity: 0.8;
 
     animation: loader 3s infinite linear;
 }
