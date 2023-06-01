@@ -18,7 +18,9 @@ function trocarTema(){
     }
 
 }
+
 const botaoTema = document.querySelector('.lampada');
 const paginaWeb = document.querySelector('.pagina');
+
 
 botaoTema.addEventListener('click', trocarTema);

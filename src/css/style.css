@@ -56,11 +56,51 @@
     transition: background-color 0.5s;
 }
 
+.preload{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    margin: -10px;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    background-color: black;
+    opacity: 0.9;
+}
+.preload .circulo{
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    border: 5px dotted var(--cor-fonte);
+    opacity: 0.4;
+
+    animation: loader 3s infinite linear;
+}
+
+.preload.inativo{
+    display: none;
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .pagina{
     display: flex;
     gap: 10px;
     padding: 10px;
     min-height: 100vh;
+
+    overflow: hidden;
 
     flex-wrap: nowrap;
 
