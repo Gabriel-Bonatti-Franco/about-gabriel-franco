@@ -224,12 +224,6 @@ aside .card a:hover{
     transition: 0.3s;
 }
 
-aside .card .projetos a:hover{
-    text-shadow: 1px 1px 2px var(--cor-blocos);
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
 aside .card.sobre{
     height: calc(1.5 * var(--altura-conteudo-main));
     line-height: 2em;
@@ -239,14 +233,10 @@ aside .card.sobre{
 
 aside .card.sobre .foto{
     border-radius: 50%;
-    
     width: 170px;
-
     margin: auto;
     margin-top: 20px;
-
     text-align: center;
-
     background-color: var(--cor-blocos);
 }
 
