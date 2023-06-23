@@ -15,7 +15,7 @@
 
     --cor-fundo-claro: #727275;
     --cor-blocos-claro: #20262c;
-    --cor-destaque-claro: #dadada;
+    --cor-destaque-claro: #fafafa;
     --cor-fonte-claro: #ffffff;
 
     --cor-fundo-escuro: #1e3344;
@@ -111,7 +111,8 @@
     
     background-color: var(--cor-fundo);
 
-    font-size: 1em;
+    font-size: 1em;
+
 }
 
 .pagina{
